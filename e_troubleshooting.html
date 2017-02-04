@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>疑难解答</title>
+	<link rel="stylesheet" href="css/e_troubleshooting.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="icon" href="images/icon.png">
+</head>
+<body>
+<!-- 顶部的加载条 -->
+<div id="web_loading">
+	<div></div>
+</div>
+<!-- 头部 -->
+<div class="header">
+	<div class="container">
+	<a href="#" class="cx_logo"></a>
+	<ul class="header_nav">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="b_introduction.html">简介</a>	
+			</li>
+			<li>
+				<a href="c_cooperative.html">合作</a>
+			</li>
+			<li>
+				<a href="d_coverage.html">媒体</a>
+			</li>
+			<li>
+				<a class="active" href="e_troubleshooting.html">疑难</a>
+			</li>
+			<li>
+				<a href="f_join.html">加入</a>
+			</li>
+			<li>
+				<a href="#">后台</a>
+			</li>
+		</ul>	
+	</div>		
+</div>
+<div class="e_main">
+	<div class="container">
+		<div class="main_top">
+			<div class="problem">
+				<h2>有些疑问？</h2>
+				<p>
+					为节省您的时间,您可以在自主服务中查找您所需要的服务,
+					如果没有,您可以联系我们的客服人员,我们将竭诚为您服务.
+				</p>
+			</div>
+		</div>
+		<div class="e_answer">
+			<ul>
+				<li>
+					<h3>Q1.“超级学童”平台会收费吗？<span></span></h3>
+					<p>“超级学童”不会针对您推广活动收取任何费用</p>	
+				</li>
+				<li>
+					<h3>Q1.“超级学童”平台会收费吗？<span></span></h3>
+					<p>“超级学童”不会针对您推广活动收取任何费用</p>	
+				</li>
+				<li>
+					<h3>Q1.“超级学童”平台会收费吗？<span></span></h3>
+					<p>“超级学童”不会针对您推广活动收取任何费用</p>	
+				</li>
+				<li>
+					<h3>Q1.“超级学童”平台会收费吗？<span></span></h3>
+					<p>“超级学童”不会针对您推广活动收取任何费用</p>	
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min-2.1.1.js"></script>
+<script src="js/loading.js"></script>
+<script>
+// 解答的显示和隐藏
+	$('.e_answer li').click(function(){
+		$(this).siblings('li').children('p').slideUp("slow");
+		$(this).toggleClass('active').children('p').slideToggle("slow");
+		if( $(this).siblings('li').children('p').is(":visible")  ){
+			$(this).siblings('li').removeClass('active');
+		}
+	});
+</script>
+</body>
+</html>

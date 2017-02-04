@@ -1,0 +1,54 @@
+/*第一板块*/
+.container_top{
+	position:relative;
+	margin-top:40px;
+	height:431px;
+	background:url(../images/c_01.png) no-repeat;
+}
+.container_txt{
+	width:350px;
+	position:absolute;
+	top:95px;
+	left:20px;
+}
+.container_txt h2{
+	margin-left:15px;
+}
+.container_txt div{
+	font-size:12px;
+	margin-top:20px;
+	padding-left: 15px;
+	line-height:20px;
+}
+/*列表中的图片*/
+.xue_logo ul li{
+	/*text-align: center;*/
+	/*margin:0 auto;*/
+	display:inline-block;
+	padding:20px;
+	padding-bottom: 0;
+	width:194px;
+	height:51px;
+	background:url(../images/xue_logo/c_1.png) 20px 13px no-repeat;
+	border:1px solid #ddd;
+	border-top:0;
+	border-left:0;
+}
+.xue_logo ul li:hover{
+	background:url(../images/xue_logo/c_1_1.png) 20px 13px no-repeat;
+}
+.xue_logo ul li.logo_bottom{
+	border-bottom: 0;
+}
+.xue_logo ul li.logo_none{
+	border-right: 0;
+}
+
+#btn{
+	width:130px;
+	height: 31px;
+	background: #0095D1;
+	color:#fff;
+	margin-top: 30px;
+	border:0;
+}

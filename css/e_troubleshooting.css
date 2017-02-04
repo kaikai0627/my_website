@@ -1,0 +1,51 @@
+.e_main{
+	margin-top:40px;
+}
+.main_top{
+	height:398px;
+	background: url(../images/e_03.png) no-repeat;
+	position:relative;
+}
+.problem{
+	position:absolute;
+	top:100px;
+	left:0;
+	width:600px;
+}
+.problem p{
+	margin-top:30px;
+	line-height: 30px;
+}
+.e_answer{
+	margin-top:30px;
+	border-top:1px solid #000;
+}
+.e_answer li{
+	border-bottom:1px solid #ddd;
+	position:relative;
+	padding:20px 0;
+	cursor:pointer;
+}
+.e_answer h3{
+	font-size:14px;
+	/*margin-top: 20px;*/
+}
+.e_answer p{
+	display:none;
+	font-size:12px;
+	margin-top:20px;
+}
+.e_answer li span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border:1px solid #000;
+	border-radius:50%;
+	background: url(../images/jt_down.jpg) 7px 9px no-repeat;
+	position: absolute;
+	top:15px;
+	right:5px;
+}
+.e_answer li.active span{
+	background: url(../images/jt_up.jpg) 7px 9px no-repeat;
+}

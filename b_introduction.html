@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0"> -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> -->
+	<title>功能简介</title>
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/b_introduction.css">
+</head>
+<body>
+<!-- 顶部的加载条 -->
+<div id="web_loading">
+	<div></div>
+</div>
+<!-- 头部 -->
+<div class="header">
+	<div class="container">
+	<a href="#" class="cx_logo"></a>
+	<ul class="header_nav">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li class="b_xuanx">
+				<a class="active" href="b_introduction.html">简介</a><i></i>
+				<ul class="b_lieb">
+					<li>前端</li>
+					<li>后台</li>
+				</ul>
+			</li>
+			<li>
+				<a href="c_cooperative.html">合作</a>
+			</li>
+			<li>
+				<a href="d_coverage.html">媒体</a>
+			</li>
+			<li>
+				<a href="e_troubleshooting.html">疑难</a>
+			</li>
+			<li>
+				<a href="f_join.html">加入</a>
+			</li>
+			<li>
+				<a href="#">后台</a>
+			</li>
+		</ul>	
+	</div>		
+</div>
+
+<!-- 主体 -->
+<div class="b_mian">
+	<div class="container">
+		<div class="qianduan">
+			<!-- 板块一 -->
+			<div class="box_one">
+				<!-- 模板1 -->
+				<div class="content content1">
+					<h4>签到模板</h4>
+					<p>成功是得其所想，幸福是想其所得！成功是得其所想，幸福是想其所得！</p>
+				</div>
+				<!-- 模板2 -->
+				<div class="content content2">
+					<h4>社交模板</h4>
+					<p>成功是得其所想，幸福是想其所得！成功是得其所想，幸福是想其所得！</p>
+				</div>
+				<!-- 模板3 -->
+				<div class="content content3">
+					<h4>社交模板</h4>
+					<p>
+						成功是得其所想，幸福是想其所得！成功是得其所想，幸福是想其所得！
+					</p>
+				</div>
+			</div>
+			<!-- 板块二 -->
+			<div class="mian_box box_two">
+				<div class="content content4">
+					<h4>签到模板</h4>
+					<p>
+						—今天的收获，意味着明天的得失。
+						—今天的收获，意味着明天的得失。
+					</p>
+				</div>
+			</div>
+			<!-- 板块三 -->
+			<div class="mian_box box_three">
+				<div class="content content5">
+					<h4>签到模板</h4>
+					<p>
+						机会失去不再来，千贯万贯难赎回
+						机会失去不再来，千贯万贯难赎回
+					</p>
+				</div>
+			</div>
+			<!-- 板块四 -->
+			<div class="mian_box box_four">
+				<div class="content content6">
+					<h4>签到模板</h4>
+					<p>
+						——上帝总在不断的给我们创造问题，让我们解决问题，成就自己
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 后台 -->
+		<div class="houtai">
+			<!-- 上半身 -->
+			<div class="houtai_top"></div>
+			<div class="solid">
+				<div class="hr_text">
+					后台模板
+				</div>
+				<p>BACKGROUND</p>
+			</div>
+			<!-- 下半截 -->
+			<div class="hou_imgs">
+				<ul class="contentbox-four">
+					<li class="con-four lf">						
+						<img src="images/b_06.png" alt="">
+						<div class="txt-four">
+							<h3>希望。</h3>
+							<p>别放弃 ！还有明天</p>
+						</div>
+					</li>
+					<li class="con-four rt">
+						<img src="images/b_07.png" alt="">
+						<div class="txt-four">
+							<h3>希望。</h3>
+							<p>别放弃 ！还有明天</p>
+						</div>
+					</li>
+					<li class="con-four lf">
+						<img src="images/b_08.png" alt="">
+						<div class="txt-four">
+							<h3>希望。</h3>
+							<p>别放弃 ！还有明天</p>
+						</div>
+					</li>
+					<li class="con-four rt">
+						<img src="images/b_06.png" alt="">
+						<div class="txt-four">
+							<h3>希望。</h3>
+							<p>别放弃 ！还有明天</p>
+						</div>
+					</li>
+				</ul>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="floationg_nav">
+	<div class="return_top" id="return_btn">
+		<img src="images/return.png" alt="">
+		<p>置顶</p>
+	</div>
+</div>
+<div class="footer">
+	
+</div>
+<script src="js/jquery.min-2.1.1.js"></script>
+<script src="js/loading.js"></script>
+<script>
+// 返回顶部按钮的隐藏和显示
+$('.floationg_nav').css('display','none');
+$(document).scroll(function(){
+	var top = parseInt($(window).scrollTop());
+	if($(document).scrollTop()>200){
+		$('.floationg_nav').css('display','block');	
+	}else{
+		$('.floationg_nav').css('display','none');
+	}
+	var box_Two = parseInt($('.box_two').offset().top);
+	var box_Three = parseInt($('.box_three').offset().top);
+	var box_Four = parseInt($('.box_four').offset().top);
+
+	if( box_Two < top+300 ){
+		$('.box_two .content4').addClass('anim')
+	}
+	if( box_Three < top+400 ){
+		$('.box_three .content5').addClass('anim')
+	}
+	if( box_Four < top+500 ){
+		$('.box_four .content6').addClass('anim')
+	}
+});
+
+// 鼠标移入移出事件
+$('.con-four').hover(function(){
+	$(this).find('.txt-four').stop().animate({"left":0});
+},function(){
+	$(this).find('.txt-four').stop().animate({"left":-450});
+});//find() 方法获得当前元素集合中每个元素的后代，通过选择器、jQuery 对象或元素来筛选
+
+// 返回顶部点击事件
+$('.floationg_nav').click(function(){
+	// $(document).scrollTop(0);	
+	$('html,body').animate({
+		"scrollTop":0
+	},1500)
+});
+
+
+// 导航条小列表
+$('.b_xuanx').mouseover(function(){
+	$('.b_lieb').show();
+});
+$('.b_xuanx').mouseout(function(){
+	$('.b_lieb').hide();
+});
+
+// 前端后台切换显示
+// $('#d1').click(function(){
+// 	$('.qianduan').css('display','block');
+// 	$('.houtai').css('display','none');
+// });
+// $('#d2').click(function(){
+// 	$('.qianduan').css('display','none');
+// 	$('.houtai').css('display','block');
+// });
+$(".b_lieb li").click(function(){
+	if($(this).text() == '后台'){
+		$('.qianduan').fadeOut();
+		$('.houtai').fadeIn();
+	}else{
+		$('.houtai').fadeOut();
+		$('.qianduan').fadeIn();
+	}
+})
+</script>
+</body>
+</html>

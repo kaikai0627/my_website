@@ -1,0 +1,99 @@
+/*页面的背景色*/
+body{
+	background:#000;
+}
+/*首页导航条样式*/
+/*logo图*/
+.container .cx_logo{
+	width:138px;
+	height:34px;
+	background:url(../images/logo01.png) 0 0 no-repeat;
+	position:absolute;
+	top:15px;
+	left:40px;
+}
+
+/*导航条*/
+#header>.container{
+	margin-top:20px;
+	font-weight:bold;
+
+}
+
+#header>.container li a{
+	color:#fff;
+}
+#header .header_nav li a.active{
+	color:#00b3e1;
+}
+
+.header_nav{
+	position: fixed;
+	right:40px;
+	z-index: 9999;
+}
+
+
+/***********************主体部分*******************************************/
+/*第一个页面的样式*/
+
+/*动画部分*/
+#page1{
+	position:relative;
+	color:#fff;
+}
+
+#page1 img,#page1 p{
+	position: absolute;
+
+}
+
+/*图片*/
+#page1 img{
+	left:40%;
+	top:200px;
+	-webkit-animation: myimg;
+	-o-animation: myimg;
+	animation: myimg 1s;
+}
+@keyframes myimg {
+	0%{
+		left:-40%
+	}
+	100%{
+		left:40%
+	}
+}
+
+#page1 .txt1{
+	right:43%;
+	top:270px;
+	-webkit-animation: mytxt1;
+	-o-animation: mytxt1;
+	animation: mytxt1 1.5s;
+}
+@keyframes mytxt1{
+	0%{
+		right:-43%
+	}
+	100%{
+		right:43%
+	}
+}
+
+
+#page1 .txt2{
+	left:48%;
+	top:300px;
+	-webkit-animation: mytxt2;
+	-o-animation: mytxt2;
+	animation: mytxt2 2s;
+}
+@keyframes mytxt2 {
+	0%{
+		left:-48%
+	}
+	100%{
+		left:48%
+	}
+}

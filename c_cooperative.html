@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>合作院校</title>
+	<link rel="stylesheet" href="css/c_cooperative.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="icon" href="images/icon.png">
+</head>
+<body>
+<div id="web_loading">
+	<div></div>
+</div>
+<div class="header">
+	<div class="container">
+		<a href="#" class="cx_logo"></a>
+		<ul class="header_nav">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+			 	<a href="b_introduction.html">简介</a>
+			 </li>
+			<li>
+				<a class="active" href="#">合作</a>
+			</li>
+			<li>
+				<a href="d_coverage.html">媒体</a>
+			</li>
+			<li>
+				<a href="e_troubleshooting.html">疑难</a>
+			</li>
+			<li>
+				<a href="f_join.html">加入</a>
+			</li>
+			<li>
+				<a href="#">后台</a>
+			</li>
+		</ul>	
+	</div>	
+</div>
+<!-- 第一板块 -->
+<div class="c_main">
+	<div class="container">
+		<div class="container_top">
+			<div class="container_txt">
+				<h2><span id="scrollNumber">1000</span><sup>+</sup> 国内知名高校选择我们</h2>
+				<div>
+					为节约您的时间，你可以在自主服务中查找您所需要的服务,如果没有,您可以联系我们的客服人员,我们将竭诚为您服务.
+				</div>
+			</div>
+		</div>
+		<!-- 列表中的图片 -->
+		<div class="xue_logo">
+			<ul class="c_block">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="logo_none"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="logo_none"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="logo_none"></li>
+			</ul>
+			<ul class="c_none" style="display:none">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="logo_none"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="logo_none"></li>
+				<li class="logo_bottom"></li>
+				<li class="logo_bottom"></li>
+				<li class="logo_bottom"></li>
+				<li class="logo_none logo_bottom"></li>
+			</ul>
+			<div>
+				<button id="btn">LOAD MORE ></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min-2.1.1.js"></script>
+<script src="js/loading.js"></script>
+<script>
+	$('#btn').click(function(){
+		if( $('#btn').text() == 'LOAD MORE >' ){
+			$('.c_none').fadeIn(500);
+			$('#btn').text('LOAD END~');
+		}else{
+			$('.c_none').fadeOut(500);
+			$('#btn').text('LOAD MORE >');
+		}
+	});
+	$(function(){
+		var scrollNumber = document.getElementById('scrollNumber');
+		var i = 0;
+		setInterval(function(){
+			i++;
+			if(i>1000){
+				scrollNumber.innerHTML=1000;
+			}else{
+				scrollNumber.innerHTML=i;
+			}
+		},1)
+	})
+</script>
+</body>
+</html>

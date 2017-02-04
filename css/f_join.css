@@ -1,0 +1,37 @@
+.f_main{
+	margin-top:40px;
+}
+.container_one{
+	height:698px;
+	background: url(../images/f_01.png) no-repeat;
+}
+.container_one img{
+	position: absolute;
+	top:553px;
+	left:127px;
+}
+.content_text th{
+	width:122px;
+	height:30px;
+	text-align: left;
+	vertical-align:top;
+}
+.content_text td{
+	width:543px;
+	line-height: 30px;
+} 
+/*第三板块*/
+.content_two{
+	height:671px;
+	width:1021px;
+	background: url(../images/f_02.png) no-repeat;
+	position: relative;
+	top:-100px;
+	z-index: -1;
+}
+.j_content{
+	position: absolute;
+	top:320px;
+	left:45px;
+	color:#fff;
+}

@@ -1,0 +1,276 @@
+/*选项列表，前端  后台*/
+.b_xuanx{
+	position:relative;
+}
+/*套航小列表*/
+.b_lieb{
+	position:absolute;
+	top:40px;
+	left:-5px;
+	background:#fff;
+	width:80px;
+	height:80px;
+	z-index: 666;
+	border:1px solid #ddd;
+	text-align:center;
+	display:none;
+}
+.b_lieb li{
+	width:80px;
+	height:40px;
+	cursor:pointer;
+}
+/*套航小列表箭头图片*/
+.b_xuanx i{
+	display:inline-block;
+	width:20px;
+	height:10px;
+	margin-left:-20px; 
+	background:url(../images/jt_down.jpg) 5px 2px no-repeat;
+}
+.b_xuanx:hover i{
+	background:url(../images/jt_up.jpg) 5px 2px no-repeat;
+}
+/*套航小列表进入移出样式*/
+.b_xuanx .b_lieb li:hover{
+		background:#00A1E8;
+		color:#fff;
+}
+
+
+/****************************前端************************************/
+.b_mian{
+	margin-top:41px;
+}
+/*图片*/
+.box_one{
+	width:100%;
+	height:698px;
+	background:url(../images/b_01.png) no-repeat;
+	position:relative;
+}
+.box_two{
+	width:100%;
+	height:614px;
+	background:url(../images/b_02.png) no-repeat;
+	position:relative;
+}
+.box_three{
+	height:614px;
+	background:url(../images/b_03.png) no-repeat;
+	position:relative;
+}
+.box_four{
+	height:614px;
+	background:url(../images/b_04.png) no-repeat;
+	position:relative;
+}
+/* 模板样式 */
+.qianduan .content{
+	position:absolute;
+	width:270px;
+}
+.qianduan .content p{
+	margin-top: 10px;
+}
+/*模板一的动画和样式*/
+.box_one .content1{	
+	top:37px;
+	left:280px;
+	-webkit-animation:content1Anim 1s linear;
+	-moz-animation:content1Anim 1s linear;
+	-o-animation:content1Anim 1s linear;
+	animation:content1Anim 1s linear;
+}
+@keyframes content1Anim{
+	0%{
+		left:-740px;
+	}
+	100%{
+		left:280px;
+	}
+}
+
+/* 模板二的动画和样式 */
+.box_one .content2{
+	top:76px;
+	right:90px;
+	-webkit-animation:content1Anim 1.5s linear;
+	-moz-animation:content1Anim 1.5s linear;
+	-o-animation:content1Anim 1.5s linear;
+	animation:content2Anim 1.5s linear;
+}
+@keyframes content2Anim{
+	0%{
+		right:-740px;
+	}
+	100%{
+		right:90px;
+	}
+}
+
+/* 模板三的动画和样式 */
+.box_one .content3{
+	top:160px;
+	left:372px;
+	-webkit-animation:content1Anim 2s linear;
+	-moz-animation:content1Anim 2s linear;
+	-o-animation:content1Anim 2s linear;
+	animation:content3Anim 2s linear;
+}
+@keyframes content3Anim{
+	0%{
+		top:-740px;
+	}
+	100%{
+		top:160px;
+	}
+}
+
+/* 板块二的动画与样式 */
+.box_two .content4{
+	display: none;
+}
+.box_two .content4.anim{
+	display: block;
+	top:340px;
+	left:117px;
+	color:#fff;
+	-webkit-animation:content4Anim 1s linear;
+	-moz-animation:content4Anim 1s linear;
+	-o-animation:content4Anim 1s linear;
+	animation:content4Anim 1s linear;
+}
+@keyframes content4Anim{
+	0%{
+		left:-740px;
+	}
+	100%{
+		left:117px;
+	}
+}
+.box_three .content5{
+	display: none;
+}
+/*板块三的动画与样式*/
+.box_three .content5.anim{
+	display: block;
+	width:255px;
+	top:242px;
+	right:136px;
+	color:#1B95D4;
+	-webkit-animation:content5Anim 1s linear;
+	-moz-animation:content5Anim 1s linear;
+	-o-animation:content5Anim 1s linear;
+	animation:content5Anim 1s linear;
+}
+@keyframes content5Anim{
+	0%{
+		right:-740px;
+	}
+	100%{
+		right:136px;
+	}
+}
+.box_four .content6{
+	display: none;
+}
+.box_four .content6.anim{
+	display: block;
+	top:154px;
+	left:70px;
+	color:#fff;
+	-webkit-animation:content1Anim 1s linear;
+	-moz-animation:content1Anim 1s linear;
+	-o-animation:content1Anim 1s linear;
+	animation:content6Anim 1s linear;
+}
+@keyframes content6Anim{
+	0%{
+		left:-740px;
+	}
+	100%{
+		left:70px;
+	}
+}
+
+/* **************************后台********************************* */
+/*上半身*/
+.houtai{
+	display: none;
+}
+.houtai .houtai_top{
+	height:458px;
+	background: url(../images/b_05.png) no-repeat;
+}
+.houtai .solid{
+	margin-top: 50px;
+	border-top:2px solid #90D4EF;
+	position:relative;
+}
+.houtai .hr_text{
+	position:absolute;
+	top:-11px;
+	left:50%;
+	color:#00C4FD;
+	font-size:14px;
+	z-index: 3;
+	animation:content7Anim 1s linear;
+}
+@keyframes content7Anim{
+	0%{
+		left:-300px;
+	}
+	100%{
+		left:50%;
+	}
+}
+.houtai .solid>p{
+	position:absolute;
+	left:43%;
+	top:-20px;
+	font-size:26px;
+	color:#E8E7E4;
+	background:#fff;
+	z-index: 2;
+}
+/*下半截*/
+.contentbox-four{
+	margin-top:50px;
+}
+.contentbox-four .con-four{
+	position:relative;
+	margin-top:50px;
+	overflow:hidden;
+}
+.con-four .txt-four{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:-450px;
+	text-align: center;
+	color:#fff;	
+
+	background:rgba(0,171,219, .6);
+}
+.txt-four h3{
+	font-weight: normal;
+}
+
+/*鼠标移入实现2D*/
+.con-four img{
+	transition:All 0.3s linear;
+}
+.con-four:hover img{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+.footer{
+	margin-bottom:100px;
+}

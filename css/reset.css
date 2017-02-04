@@ -1,0 +1,33 @@
+body{
+	font:100% "microsoft yahei",Arial,Helvetica,sans-serif;
+	color:#666;
+	margin:0;
+	padding:0;
+}
+p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+}
+input   {border: 0;}
+.lf     {float: left;}
+.rt	    {float: right;}
+.clear  {clear:both;}
+a 	    {color:#666; text-decoration: none;}
+a:hover {color:#429df3; text-decoration: none;}
+img {border:0;}
+/*顶部的加载条*/
+#web_loading{
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:99999;
+}
+#web_loading div{
+	width:0;
+	height:5px;
+	background:#FF9F15;
+}
