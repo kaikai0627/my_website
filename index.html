@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/header.css"/>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
-	<link rel="stylesheet" href="fonts/sns_fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
 	<link rel="stylesheet" href="css/full_screen_background_slider.css">
 	<script src="js/jquery.min-2.1.1.js"></script>
 	<script src="js/modernizr.custom.js"></script>
@@ -60,23 +60,84 @@
 		<p class="txt1">超级学童相伴您四年大学生活</pclass>
 
 		<p class="txt2">是你学校生涯的好帮手</p>
+		
+		<div class="ewm">
+			<img src="images/ewm.jpg" alt=""/>
+		</div>
+		<div class="banben" style="display:none">
+			<img class="Android" src="images/Android.png" alt=""/>
+			<P>Android</P>
+			<img class="ios" src="images/IOS.png" alt=""/>
+			<P>IOS</P>
+		</div>
+		<ul class="footer-social">
+			<!-- 二维码需要改变 -->
+			<div class="lianjie" style="display: none;">
+				<img src="images/Android.png" alt="分享" title="分享">
+				<p>手机扫描分享</p>
+				<div class="down_arrow"></div>
+			</div>
+			<!-- 分享至微信 -->
+			<li>
+				<a title="微信分享" class="weixin" href="javascript:;">
+					<i class="icon iconfont">&#xe60a;</i>
+				</a>
+			</li>
+			<!-- 分享至微博 -->
+			<li>
+				<a title="微博分享" href="http://v.t.sina.com.cn/share/share.php?url=http://www.sprxt.com/index.html&title=超级学童官网">
+					<i class="icon iconfont">&#xe619;</i>
+				</a>
+			</li>
+			<!-- 分享至QQ -->
+			<li>
+				<a title="QQ分享" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.sprxt.com/index.html&title=超级学童官网">
+					<i class="icon iconfont">&#xe62d;</i>
+				</a>
+			</li>
+			<!-- 分享至人人 -->
+			<li>
+				<a title="人人分享" href="http://share.renren.com/share/buttonshare.do?link=http://www.sprxt.com/index.html&title=超级学童官网">
+					<i class="icon iconfont">&#xe6f4;</i>
+				</a>
+			</li>
+		</ul>
+		<a href="#page2">
+			<img src="images/btn_03.png" alt=""/>
+		</a>
 	</div>
 
 	<!--第二个页面-->
 
-	<div class="section">2</div>
+	<div class="section">
+		<a href="#page3">
+			<img src="images/btn_03.png" alt=""/>
+		</a>
+	</div>
 
 	<!--第三个页面-->
 
-	<div class="section">3</div>
+	<div class="section">
+		<a href="#page4">
+			<img src="images/btn_03.png" alt=""/>
+		</a>
+	</div>
 
 	<!--第四个页面-->
 
-	<div class="section">4</div>
+	<div class="section">
+		<a href="#page5">
+			<img src="images/btn_03.png" alt=""/>
+		</a>
+	</div>
 
 	<!--第五个页面-->
 
-	<div class="section">5</div>
+	<div class="section">
+		<a href="#page1">
+			<img src="images/btn_04.png" alt=""/>
+		</a>
+	</div>
 </div>
 <div></div>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
@@ -89,7 +150,7 @@ $(function(){
 		verticalCentered:false,//内容是否垂直居中(默认为true)
 		resize:false,//字体是否随着窗口缩放二缩放(默认为false)
 		slidesColor:[],//设置背景颜色
-		anchors:['p1','p2','p3','p4','p5'],//定义锚链接
+		anchors:['page1','page2','page3','page4','page5'],//定义锚链接
 		scrollongSpeed:700,//滚动速度,单位为毫秒(默认为700)
 //		easing:easelnQuart,//滚动动画方式(默认为easelnQuart)
 		menu:true,//绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
@@ -97,10 +158,41 @@ $(function(){
 //		continuousVertical:true,//是否循环滚动(默认false)
 		loopBottom:true,
 		navigationTooltips:['start','hello','good','firends','over'],//项目导航的tip
+		'onLeave': function(index, nextIndex, direction){
+			if(nextIndex!=1){
 
+				$('.bg_img').css({
+					'-webkit-filter':' blur(6px)',/* Chrome, Opera */
+					'-moz-filter':' blur(6px)',
+					'-ms-filter': 'blur(6px)' ,
+					'filter': 'blur(6px)'
+				});
+			}else{
+
+				$('.bg_img').css({
+					'-webkit-filter':' blur(0px)',
+					'-moz-filter':' blur(0px)',
+					'-ms-filter': 'blur(0px)' ,
+					'filter': 'blur(0px)'
+				});
+			}
+		}
 	});
+	$('.ewm img').mouseover(function(){
+		$('.banben').slideDown();
+	});
+	$('.ewm img').mouseout(function(){
+		$('.banben').slideUp();
+	});
+
+	$('.weixin').mouseover(function(){
+		$('.lianjie').slideDown();
+	});
+	$('.weixin').mouseout(function(){
+		$('.lianjie').slideUp();
+	});
+
 });
 </script>
-<!--<script src="js/jquery.fullPage.js"></script>-->
 </body>
 </html>

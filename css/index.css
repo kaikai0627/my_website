@@ -48,8 +48,8 @@ body{
 
 }
 
-/*图片*/
-#page1 img{
+/*文字图的动画  样式*/
+#page1>img{
 	left:40%;
 	top:200px;
 	-webkit-animation: myimg;
@@ -65,6 +65,7 @@ body{
 	}
 }
 
+/*文字的样式  动画*/
 #page1 .txt1{
 	right:43%;
 	top:270px;
@@ -81,7 +82,6 @@ body{
 	}
 }
 
-
 #page1 .txt2{
 	left:48%;
 	top:300px;
@@ -96,4 +96,100 @@ body{
 	100%{
 		left:48%
 	}
+}
+/*页面跳转的按钮位置*/
+.section>a>img{
+	position: absolute;
+	bottom:30px;
+	left:50%;
+
+}
+
+.footer-social>li{
+	float:left;
+	margin-right:10px;
+}
+
+.footer-social{
+	position: absolute;
+	right:15px;
+	bottom:50px;
+}
+.footer-social a{
+	color: #fff;
+}
+.footer-social a:hover{
+	color:#00B3E1;
+}
+/*手机扫描分享*/
+.lianjie {
+	width:120px;
+	height:120px;
+	position: absolute;
+	bottom: 40px;
+	right:80px;
+	background: #fff;
+	border-radius:3px;
+}
+.lianjie img{
+	width:90px;
+	height:90px;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.lianjie>p{
+	color:#000;
+	margin-top: 80%;
+}
+.down_arrow{
+	width:0;
+	height:0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #fff;
+	position: absolute;
+	bottom: -8px;
+	left:45%;
+}
+.ewm{
+	width:70px;
+	height:70px;
+	background:#fff;
+	border-radius:5px;
+	position:absolute;
+	left:40px;
+	bottom:40px;
+}
+.ewm>img{
+	width:60px;
+	margin-top: 5px;
+	margin-left:5px;
+}
+.banben{
+	width:207px;
+	height:130px;
+	background:#fff;
+	position:absolute;
+	bottom:110px;
+	left:110px;
+	border-radius:5px;
+}
+.banben img{
+	width:80px;
+	height:80px;
+	margin-top: 15px;
+}
+.Android{
+	margin-left: 15px;
+}
+.ios{
+	margin-left: 110px;
+}
+.banben p{
+	color:#000;
+	margin-top:50%;
+	margin-left: 20px;
+}
+.banben p:last-child{
+	margin-left:130px;
 }
